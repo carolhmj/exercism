@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 @test "stating something" {
-  #skip
   run bash bob.sh 'Tom-ay-to, tom-aaaah-to.'
   [ "$status" -eq 0 ]
   [ "$output" == "Whatever." ]
